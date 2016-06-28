@@ -1,7 +1,7 @@
 {
   "name": "loopback-mixin-whitelist",
   "description": "Whitelist which remote methods are automatically exposed through the api via a whitelist on the model.json definition file",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
