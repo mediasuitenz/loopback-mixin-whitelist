@@ -15,3 +15,21 @@ npm install loopback-mixin-whitelist --save
 ```
 
 ## Usage
+Create your own mixin file in the `server/mixins` directory (e.g. `server/mixins/method-whitelist.js`)
+
+The contents of the file should be:
+```
+module.exports = require('loopback-mixin-whitelist')
+```
+
+Then, in your model .json file, you can whitelist methods as:
+````
+"mixins": {
+    ...
+    "MethodWhitelist": {
+      "expose": [
+        "findById"
+      ]
+    }
+  }
+  ```
