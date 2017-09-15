@@ -31,7 +31,7 @@ module.exports = function (Model, options) {
     methods.concat(relationMethods).forEach(function (method) {
       var methodName = method.name
       if (methodsToExpose.indexOf(methodName) < 0) {
-        Model.disableRemoteMethod(methodName, method.isStatic)
+        Model.disableRemoteMethodByName(methodName)
       }
     })
   }
